@@ -3,3 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/chart
+hooks:
+  BeforeInstall:
+    - location: ./install_dependencies
+      timeout: 300
+      runas: root

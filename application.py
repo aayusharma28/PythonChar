@@ -181,12 +181,7 @@ app = dash.Dash(__name__, server=server)
 
 
 # In[26]:
-
-@server.route("/one")
-@app.callback(Output(component_id='line_plot', component_property= 'figure'),
-              [Input(component_id='dropdown', component_property= 'value')])
-def plotone(dropdown_value):
-    app.layout = html.Div(id = 'parent', children = [
+app.layout = html.Div(id = 'parent', children = [
     html.Div([
     html.H1(id = 'H1', children = 'YTM vs TIME', style = {'textAlign':'center',\
                                             'marginTop':40,'marginBottom':40}),
@@ -304,6 +299,11 @@ def plotone(dropdown_value):
     ]),
     
 ])
+@server.route("/one")
+@app.callback(Output(component_id='line_plot', component_property= 'figure'),
+              [Input(component_id='dropdown', component_property= 'value')])
+def plotone(dropdown_value):
+    
     df = dataframe(dropdown_value)
     df = df.dropna()
     fig = px.line(df, x = 'Month', y = 'YTM', title='YTM for 2003-2022')

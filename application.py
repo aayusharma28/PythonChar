@@ -182,7 +182,7 @@ app = dash.Dash(__name__, server=server)
 
 # In[26]:
 @server.route("/one")
-app.layout = html.Div(id = 'parent', children = [
+@app.layout = html.Div(id = 'parent', children = [
     html.Div([
     html.H1(id = 'H1', children = 'YTM vs TIME', style = {'textAlign':'center',\
                                             'marginTop':40,'marginBottom':40}),

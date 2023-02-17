@@ -12,6 +12,7 @@ from dash import dcc
 from dash.dependencies import Input, Output
 import plotly.graph_objects as go
 from plotly.offline import iplot
+import flask
 
 
 # In[2]:
@@ -172,8 +173,9 @@ def dataframe(isi):
 
 
 
-app = dash.Dash()   #initialising dash app
-server = app.server
+
+server = flask.Flask(__name__)
+app = dash.Dash(__name__, server=server)
 
     
 

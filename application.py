@@ -300,7 +300,7 @@ app.layout = html.Div(id = 'parent', children = [
     
 ])
 @server.route("/one")
-@app.callback(Output(component_id='line_plot', component_property= 'figure'),
+@server.callback(Output(component_id='line_plot', component_property= 'figure'),
               [Input(component_id='dropdown', component_property= 'value')])
 def plotone(dropdown_value):
     

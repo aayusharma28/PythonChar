@@ -181,6 +181,7 @@ app = dash.Dash(__name__, server=server)
 
 
 # In[26]:
+@server.route("/one")
 app.layout = html.Div(id = 'parent', children = [
     html.Div([
     html.H1(id = 'H1', children = 'YTM vs TIME', style = {'textAlign':'center',\
@@ -299,8 +300,8 @@ app.layout = html.Div(id = 'parent', children = [
     ]),
     
 ])
-@server.route("/one")
-@server.callback(Output(component_id='line_plot', component_property= 'figure'),
+
+@app.callback(Output(component_id='line_plot', component_property= 'figure'),
               [Input(component_id='dropdown', component_property= 'value')])
 def plotone(dropdown_value):
     

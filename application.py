@@ -182,7 +182,7 @@ app = dash.Dash(__name__, server=server)
 
 # In[26]:
 
-@app.route("/one")
+@server.route("/one")
 @app.callback(Output(component_id='line_plot', component_property= 'figure'),
               [Input(component_id='dropdown', component_property= 'value')])
 def plotone(dropdown_value):
@@ -308,7 +308,7 @@ def plotone(dropdown_value):
     df = df.dropna()
     fig = px.line(df, x = 'Month', y = 'YTM', title='YTM for 2003-2022')
     return fig
-@app.route("/five")
+@server.route("/five")
 @app.callback(Output(component_id='line_plot', component_property= 'figure'),
               [Input(component_id='dropdown', component_property= 'value')])
 def plotfive(dropdown1_value):

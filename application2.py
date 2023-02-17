@@ -24,13 +24,13 @@ df03 = pd.read_csv("2003.csv")
 # In[70]:
 
 
-# df04 = pd.read_csv("2004.csv")
+df04 = pd.read_csv("2004.csv")
 
 
 # # In[71]:
 
 
-# df05 = pd.read_csv("2005.csv")
+df05 = pd.read_csv("2005.csv")
 
 
 # # In[72]:

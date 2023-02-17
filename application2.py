@@ -150,7 +150,7 @@ df_all.memory_usage(deep=True).sum()
 # In[91]:
 
 
-del df03, df04, df05, df06, df07, df08, df09, df10, df11, df12, df13, df14, df15, df16, df17, df18, df19, df20, df21, df22
+del df03, df04, df05#, df06, df07, df08, df09, df10, df11, df12, df13, df14, df15, df16, df17, df18, df19, df20, df21, df22
 
 
 # In[92]:

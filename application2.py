@@ -24,121 +24,121 @@ df03 = pd.read_csv("2003.csv")
 # In[70]:
 
 
-df04 = pd.read_csv("2004.csv")
+# df04 = pd.read_csv("2004.csv")
 
 
-# In[71]:
+# # In[71]:
 
 
-df05 = pd.read_csv("2005.csv")
+# df05 = pd.read_csv("2005.csv")
 
 
-# In[72]:
+# # In[72]:
 
 
-df06 = pd.read_csv("2006.csv")
+# df06 = pd.read_csv("2006.csv")
 
 
-# In[73]:
+# # In[73]:
 
 
-df07 = pd.read_csv("2007.csv")
+# df07 = pd.read_csv("2007.csv")
 
 
-# In[74]:
+# # In[74]:
 
 
-df08 = pd.read_csv("2008.csv")
+# df08 = pd.read_csv("2008.csv")
 
 
-# In[75]:
+# # In[75]:
 
 
-df09 = pd.read_csv("2009.csv")
+# df09 = pd.read_csv("2009.csv")
 
 
-# In[76]:
+# # In[76]:
 
 
-df10 = pd.read_csv("2010.csv")
+# df10 = pd.read_csv("2010.csv")
 
 
-# In[77]:
+# # In[77]:
 
 
-df11 = pd.read_csv("2011.csv")
+# df11 = pd.read_csv("2011.csv")
 
 
-# In[78]:
+# # In[78]:
 
 
-df12 = pd.read_csv("2012.csv")
+# df12 = pd.read_csv("2012.csv")
 
 
-# In[79]:
+# # In[79]:
 
 
-df13 = df = pd.read_csv('2013.csv')
+# df13 = df = pd.read_csv('2013.csv')
 
 
-# In[80]:
+# # In[80]:
 
 
-df14 = pd.read_csv('2014.csv')
+# df14 = pd.read_csv('2014.csv')
 
 
-# In[81]:
+# # In[81]:
 
 
-df15 = pd.read_csv('2015.csv')
+# df15 = pd.read_csv('2015.csv')
 
 
-# In[82]:
+# # In[82]:
 
 
-df16 = pd.read_csv('2016.csv')
+# df16 = pd.read_csv('2016.csv')
 
 
-# In[83]:
+# # In[83]:
 
 
-df17 = pd.read_csv('2017.csv')
+# df17 = pd.read_csv('2017.csv')
 
 
-# In[84]:
+# # In[84]:
 
 
-df18 = pd.read_csv('2018.csv')
+# df18 = pd.read_csv('2018.csv')
 
 
-# In[85]:
+# # In[85]:
 
 
-df19 = pd.read_csv('2019.csv')
+# df19 = pd.read_csv('2019.csv')
 
 
-# In[86]:
+# # In[86]:
 
 
-df20 = pd.read_csv('2020.csv')
+# df20 = pd.read_csv('2020.csv')
 
 
-# In[87]:
+# # In[87]:
 
 
-df21 = pd.read_csv('2021.csv')
+# df21 = pd.read_csv('2021.csv')
 
 
-# In[88]:
+# # In[88]:
 
 
-df22 = pd.read_csv('2022.csv')
+# df22 = pd.read_csv('2022.csv')
 
 
 # In[89]:
 
 
-df_all = pd.concat([df03, df04, df05, df06, df07, df08, df09, df10, df11, df12, df13, df14, df15, df16, df17, df18, df19, df20, df21, df22])
+df_all = pd.concat([df03, df04, df05]) #df06, df07, df08, df09, df10, df11, df12, df13, df14, df15, df16, df17, df18, df19, df20, df21, df22])
 
 
 # In[90]:

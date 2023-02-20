@@ -371,6 +371,7 @@ def plotfive(dropdown1_value):
         dfs = {"df1": df[0]}
         fig = go.Figure()
         for i in dfs:
+            dfs[i] = dfs[i].dropna()
             fig = fig.add_trace(go.Scatter(x = dfs[i]["Month"],
                                        y = dfs[i]["YTM"], 
                                        name = i))

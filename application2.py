@@ -290,7 +290,7 @@ app.layout = html.Div([
             {'label': '7.40% GS 2062', 'value': 'IN0020220094'},
             ],
         multi = True,
-        value = 'IN0020030014'),
+        value = ['IN0020030014']),
         dcc.Graph(id = 'line_plot1')
         
     

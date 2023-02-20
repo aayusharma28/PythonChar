@@ -325,8 +325,7 @@ app.layout = html.Div([
 #     for i in dfs:
 #         fig = fig.add_trace(go.Scatter(x = dfs[i]["Month"],
 #                                    y = dfs[i]["YTM"], 
-#                                    name = i))
-#     return fig
+#                           
 def plotfive(dropdown1_value):
     df = []
     for i in range(0, len(dropdown1_value)):

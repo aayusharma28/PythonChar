@@ -374,6 +374,7 @@ def plotfive(dropdown1_value):
             fig = fig.add_trace(go.Scatter(x = dfs[i]["Month"],
                                        y = dfs[i]["YTM"], 
                                        name = i))
+        return fig
 
 
 # In[67]:

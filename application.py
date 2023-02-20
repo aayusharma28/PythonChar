@@ -175,7 +175,7 @@ def dataframe(isi):
 
 
 # server = flask.Flask(__name__)
-app = dash.Dash(__name__, server=server)
+app = dash.Dash()
 
     
 
